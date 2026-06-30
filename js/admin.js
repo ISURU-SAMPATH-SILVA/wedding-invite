@@ -5,7 +5,7 @@
    sharing the admin link with family.
    ============================================================ */
 const ADMIN_SESSION_KEY = 'wedding_admin_authed';
-const PASSCODE = 'isuru-tharushi-2026';
+const PASSCODE = 'admin!123';
 
 function checkAuth(){
   return sessionStorage.getItem(ADMIN_SESSION_KEY) === 'yes';
