@@ -290,7 +290,7 @@ button{font-family:inherit; cursor:pointer;}
 .countdown .num{
   font-family:var(--font-display);
   font-size:1.5rem;
-  color:var(--gold-300);
+  color:var(--ivory);
   display:block;
 }
 .countdown .label{
@@ -511,7 +511,18 @@ button{font-family:inherit; cursor:pointer;}
   .info-grid{ flex-direction:row; }
   .info-card{ flex:1; }
 }
-
+.shosal {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  margin-top: .3rem;
+  gap: 1rem; 
+ color: var(--ivory);
+}
+.create{
+  
+margin-top: 1rem;
+}
 /* =====================================================
    Admin dashboard
    ===================================================== */

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       setTimeout(() => {
         envelopeWrapper.classList.add('fade-out');
-      }, 3200);
+      }, 1200);
     };
 
     openBtn.addEventListener('click', (e) => {
