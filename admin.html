@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Isuru & Tharushi</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+
+  <!-- ============ LOGIN ============ -->
+  <div class="admin-shell" id="admin-login-screen">
+    <div class="admin-login">
+      <h1>Your Dashboard</h1>
+      <p>Isuru &amp; Tharushi · June 15, 2026</p>
+      <form id="admin-login-form">
+        <div class="field">
+          <label for="admin-pass">Passcode</label>
+          <input id="admin-pass" type="password" placeholder="Enter passcode" required autofocus>
+        </div>
+        <button type="submit" class="btn solid" style="width:100%;">Log In</button>
+        <p class="admin-error" id="admin-error">Incorrect passcode. Please try again.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ DASHBOARD ============ -->
+  <div class="admin-shell" id="admin-dashboard" style="display:none;">
+    <div class="admin-header">
+      <div>
+        <h1>Isuru &amp; Tharushi</h1>
+        <div class="sub">November 15, 2026 wedding · guest responses</div>
+      </div>
+      <div class="admin-actions">
+        <button class="btn" id="preview-invite">⟳ Preview Invitation</button>
+        <button class="btn" id="admin-logout">⏻ Log Out</button>
+      </div>
+    </div>
+
+    <p style="font-size:.78rem; color:var(--ink-soft); margin-bottom:1rem;">Tap a metric to filter the guest list. Headcount sums guests for accepted RSVPs only.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card active" data-filter="all">
+        <div class="n" id="stat-responses">0</div>
+        <div class="l">Responses</div>
+      </div>
+      <div class="stat-card accepted" data-filter="accepted">
+        <div class="n" id="stat-accepted">0</div>
+        <div class="l">Accepted</div>
+      </div>
+      <div class="stat-card declined" data-filter="declined">
+        <div class="n" id="stat-declined">0</div>
+        <div class="l">Declined</div>
+      </div>
+      <div class="stat-card" data-filter="all">
+        <div class="n" id="stat-attending">0</div>
+        <div class="l">Total Attending</div>
+      </div>
+    </div>
+
+    <div class="share-card">
+      <h3>Share Invitation</h3>
+      <p>Send this link over text, WhatsApp, or email. Guests use it to RSVP in one tap.</p>
+      <div class="share-row">
+        <input id="share-link" type="text" readonly>
+        <button class="btn solid" id="copy-link">Copy Link</button>
+      </div>
+    </div>
+
+    <div class="table-card">
+      <div class="t-head" id="table-count">Showing 0 of 0</div>
+      <div id="table-wrap" style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Guest</th><th>Phone</th><th>Email</th><th>Guests</th>
+              <th>Note</th><th>RSVP</th><th>Updated</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="guest-tbody"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="empty-state" style="display:none;">
+        <div class="big">No responses yet</div>
+        <p>Share your invitation link above — replies will appear here as they come in.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

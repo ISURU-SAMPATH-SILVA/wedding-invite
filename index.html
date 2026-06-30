@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chamara & Saduni — Wedding Celebration</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ============ WEDDING ENVELOPE OVERLAY ============ -->
+<div class="envelope-wrapper" id="envelopeWrapper">
+  <div class="envelope" id="weddingEnvelope">
+    <div class="flap"></div>
+    <div class="pocket"></div>
+    <div class="letter">
+      <div class="letter-stamp">💛</div>
+      <h2 class="letter-title">Chamara & Saduni</h2>
+      <p class="letter-text">We are getting married!</p>
+      <button class="open-btn" id="openEnvelopeBtn">Open Invitation</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-sinhala">මංගල ආරාධනය</div>
+    <div class="hero-eyebrow">Together with their families</div>
+    <p class="hero-intro">the pleasure of your families is requested at the wedding of</p>
+    <h1 class="hero-names">Chamara &amp; Saduni</h1>
+    <div class="hero-sub">Wedding Celebration · Kandy, Sri Lanka</div>
+
+    <div class="countdown" aria-label="Countdown to the wedding">
+      <div class="unit"><span class="num" id="cd-days">00</span><span class="label">Days</span></div>
+      <div class="unit"><span class="num" id="cd-hours">00</span><span class="label">Hours</span></div>
+      <div class="unit"><span class="num" id="cd-mins">00</span><span class="label">Minutes</span></div>
+      <div class="unit"><span class="num" id="cd-secs">00</span><span class="label">Seconds</span></div>
+    </div>
+
+    <a href="#date" class="scroll-cue">
+      Scroll for details
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ SAVE THE DATE ============ -->
+  <section class="section date-section" id="date">
+    <div class="eyebrow">Save the Date</div>
+    <h2 class="section-title">We joyfully invite you to witness our union<br>in the sacred hills of Kandy</h2>
+    <p style="color:var(--ink-soft); margin-top:.6rem; font-size:.92rem;">Drums, blessings, and laughter with those we cherish most.</p>
+
+    <div class="calendar">
+      <h3 id="cal-month">July</h3>
+      <div class="cal-year" id="cal-year">2026</div>
+      <div class="cal-grid" id="cal-grid"></div>
+      <div class="big-day" id="big-day-label"></div>
+      <div class="cal-actions">
+        <a class="btn" id="gcal-link" href="#" target="_blank" rel="noopener">Google Calendar</a>
+        <a class="btn" id="ics-link" href="#">Download .ics</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery-section">
+    <div class="eyebrow">Our Journey Together</div>
+    <h2 class="section-title">Pre-Wedding Moments</h2>
+    <div class="divider">💛</div>
+
+    <div class="gallery" id="gallery">
+      <div class="gallery-track" id="gallery-track">
+        <img src="/imge/1.jpg" alt="Chmara and Saduni laughing together outdoors">
+        <img src="/imge/2.jpg" alt="Chmara and Saduni walking hand in hand">
+        <img src="/imge/3.jpg" alt="Close-up of hands with engagement ring and flowers">
+        <img src="/imge/4.jpg" alt="Chmara and Saduni at sunset">
+        <img src="/imge/5.jpg" alt="Candid portrait of the couple smiling">
+        <img src="/imge/6.jpg" alt="Chmara and Saduni embracing">
+        <img src="/imge/7.jpg" alt="Chmara and Saduni embracing">
+        <img src="/imge/8.jpg" alt="Chmara and Saduni embracing">
+        <img src="/imge/9.jpg" alt="Chmara and Saduni embracing">
+      </div>
+      <div class="gallery-caption">
+        <span>Pre-wedding · Celebration</span>
+        <span id="gallery-count">1 / 6</span>
+      </div>
+      <button class="gallery-nav prev" id="gallery-prev" aria-label="Previous photo">‹</button>
+      <button class="gallery-nav next" id="gallery-next" aria-label="Next photo">›</button>
+    </div>
+    <div class="gallery-dots" id="gallery-dots"></div>
+    <p style="font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin-top:1rem;">Swipe or use arrows · pauses on hover</p>
+  </section>
+
+  <!-- ============ VENUE ============ -->
+  <section class="section venue-section">
+    <div class="eyebrow">Venue &amp; Location</div>
+    <h2 class="section-title">Where to Find Us</h2>
+
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4017.818005904471!2d80.053635!3d6.240639199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1819d61725ddf%3A0x30b45d2dc4066942!2s85%2C%201%20Colombo%20Main%20Rd%2C%20Ambalangoda!5e1!3m2!1sen!2slk!4v1782817540496!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+    <div class="timeline">
+      <div class="stop">
+        <div class="tag">Ceremony</div>
+        <h4>Wedding Ceremony</h4>
+        <div class="meta"><span>🕓 10:00 AM</span><span>📍 85/1 Colombo Main Rd, Balapitiya 80550, Sri Lanka</span></div>
+      </div>
+      <div class="stop">
+        <div class="tag">Reception</div>
+        <h4>Wedding Reception</h4>
+        <div class="meta"><span>🕓 6:30 PM</span><span>📍 85/1 Colombo Main Rd, Balapitiya 80550, Sri Lanka</span></div>
+      </div>
+    </div>
+    <a class="btn solid" style="margin-top:2rem; display:inline-block;"
+   href="https://maps.app.goo.gl/dwLsn8sqSXHve2ZZ8" target="_blank" rel="noopener">
+   Get Directions
+</a>
+
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="section rsvp-section" id="rsvp">
+    <div class="eyebrow">Will You Join Us?</div>
+    <h2 class="section-title">RSVP</h2>
+    <p class="rsvp-deadline" id="rsvp-deadline-label">Kindly respond by July 25, 2026</p>
+
+    <div class="rsvp-card">
+      <form id="rsvp-form">
+        <div class="field">
+          <label for="rsvp-name">Your Full Name *</label>
+          <input id="rsvp-name" type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="field">
+          <label>Will you be joining us? *</label>
+          <div class="rsvp-toggle">
+            <button type="button" id="rsvp-accept" class="active accept">Joyfully Accept</button>
+            <button type="button" id="rsvp-decline">Regretfully Decline</button>
+          </div>
+        </div>
+
+        <div class="field" id="rsvp-guests-field">
+          <label for="rsvp-guests">Number of Guests (including you)</label>
+          <select id="rsvp-guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="rsvp-phone">Phone Number</label>
+          <input id="rsvp-phone" type="tel" placeholder="07X XXX XXXX">
+        </div>
+
+        <div class="field">
+          <label for="rsvp-email">Email (optional)</label>
+          <input id="rsvp-email" type="email" placeholder="you@example.com">
+        </div>
+
+        <div class="field">
+          <label for="rsvp-note">Message for the Couple</label>
+          <textarea id="rsvp-note" rows="3" placeholder="Leave a note or wish..."></textarea>
+        </div>
+
+        <button type="submit" class="btn solid rsvp-submit">Send RSVP</button>
+      </form>
+
+      <p class="rsvp-success" id="rsvp-success"></p>
+      <p class="rsvp-note">So we can track your attendance — your response goes straight to the couple.</p>
+    </div>
+  </section>
+
+  <!-- ============ INFO ============ -->
+  <section class="section info-section">
+    <div class="eyebrow">Good to Know</div>
+    <h2 class="section-title">Dress Code &amp; Contact</h2>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h4>Dress Code</h4>
+        <p>Traditional Kandyan attire or elegant formal wear. Gold and maroon tones welcome.</p>
+      </div>
+      <div class="info-card tp">
+        <h4>Email Us</h4>
+        <p><a href="mailto:chamara.saduni.wedding@gmail.com">chamara.saduni.wedding@gmail.com</a></p>
+      </div>
+      <div class="info-card tp">
+        <h4>Call Us</h4>
+        <p><a href="tel:+94 77 752 1459">+94 77 752 1459</a></p>
+        <p><a href="tel:+94 71 156 6138">+94 71 156 6138</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="names">Chamara  &amp; Saduni</div>
+    <div>25 . 06 . 2026 · Balapitiya, Sri Lanka</div>
+    <small>Made with love for our wedding day</small>
+    <a class="admin-link" href="admin.html">Couple &amp; family login</a>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
