@@ -1,8 +1,5 @@
 /* ============================================================
-   admin.js — couple/family dashboard
-   Auth is intentionally simple (single shared passcode) since
-   this is a static site with no backend. Swap PASSCODE before
-   sharing the admin link with family.
+   admin.js 
    ============================================================ */
 const ADMIN_SESSION_KEY = 'wedding_admin_authed';
 const PASSCODE = 'admin!123';
