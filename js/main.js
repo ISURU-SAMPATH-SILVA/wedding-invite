@@ -154,7 +154,7 @@ function initGallery(){
   document.getElementById('gallery-prev')?.addEventListener('click', () => goTo(index-1));
   document.getElementById('gallery-next')?.addEventListener('click', () => goTo(index+1));
 
-  let autoplay = setInterval(() => goTo(index+1), 4500);
+  let autoplay = setInterval(() => goTo(index+1), 2500);
   const galleryEl = document.getElementById('gallery');
   galleryEl?.addEventListener('mouseenter', () => clearInterval(autoplay));
   galleryEl?.addEventListener('mouseleave', () => autoplay = setInterval(() => goTo(index+1), 4500));
